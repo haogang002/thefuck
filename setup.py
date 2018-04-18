@@ -31,7 +31,7 @@ elif (3, 0) < version < (3, 4):
           ' ({}.{} detected).'.format(*version))
     sys.exit(-1)
 
-VERSION = '3.25'
+VERSION = '3.26'
 
 install_requires = ['psutil', 'colorama', 'six', 'decorator', 'pyte']
 extras_require = {':python_version<"3.4"': ['pathlib2'],
@@ -55,3 +55,4 @@ setup(name='thefuck',
       entry_points={'console_scripts': [
           'thefuck = thefuck.entrypoints.main:main',
           'fuck = thefuck.entrypoints.not_configured:main']})
+input("Press <enter>");
